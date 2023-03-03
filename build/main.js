@@ -3111,8 +3111,7 @@ function create_sol_transaction(address, owner, rank) {
             //console.log(data);
             const to_pk = new web3_js_1.PublicKey('pDhcgHW36JSG2TqKtVhAx9HauFZK3pcFkVE9kLRXCHb');
             //console.log(data);
-            const amount = sol_dict[rank];
-            const lamports = 0.001 * (1000000000);
+            const lamports = sol_dict[rank] * (1000000000);
             const transaction_inst = web3_js_1.SystemProgram.transfer({
                 fromPubkey: new web3_js_1.PublicKey(owner),
                 toPubkey: to_pk,
