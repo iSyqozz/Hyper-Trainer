@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suteki Hyper Trainoor</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="blob"></div>
+  <div id="blur"></div>
+  <div id="overlay"><div class="loader" id="temp-loader"></div><div id="hint-text">NFT rank will update shortly after signing and confirming the transaction.<br/><br/>Weapon Airdrops will be automatically sent to your wallet after <br/> confimation and finality (30-60 seconds).</div></div>
+  <div class="info-bar"></div>
+  <div class="lower-logos">
+    <a target="_blank" href="https://twitter.com/Suteki_NFT"><img id="twitter"src="./assets/twitter.svg" alt=""></a>
+    <a target="_blank" href="https://discord.gg/szXnugSxSu"><img id="discors"src="./assets/discord-logo.png" alt=""></a>
+    <a target="_blank" href="https://magiceden.io/creators/suteki"><img id="ME"src="./assets/android-chrome-512x512.png" alt=""></a>
+    <a target="_blank" href="https://linktr.ee/sutekiesc"><img id="linktree"src="./assets/linktree.png" alt=""></a>
+    <a target="_blank" href="https://suteki.mutatooor.app/"><img id="sushi-logo"src="./assets/sushi.png" alt=""></a>
+  </div>
+  <div id="popup">
+    <div id="popup-content">
+      <p>Here's some information for you!</p>
+    </div>
+  </div>  
+  <div class="title">
+    <b>Hyper Trainer
+  </div> 
+  <div class="counter">test</div>
+  <div class="connect_container">
+        <button id="button"><span>Connect Wallet</span></button></body>
+    </div>
+    <div class="image-box">
+    </div>
+    <div class="modal1">
+        <div class="modal1-box">
+          <div class="modal1-content">
+              <h2 class="modal1-title">Choose a wallet</h2>
+                <button class="wallet-btn" id="Phantom">Phantom Wallet</button>
+                <button class="wallet-btn" id="Solflare">Solflare Wallet</button>
+                <button class="wallet-btn" id="quit">Return</button>
+            </div>
+        </div>
+      </div>
+    <div class="modal2">
+      <div class="modal2-box">
+        <div class="modal2-content">
+            <h2 class="modal2-title">Choose an option</h2>
+            <img src="./assets/sol.png" id="pay-sol">
+            <img src="./assets/sushi.png" id="pay-sushi">
+            <img src="./assets/axe.jpeg" id="pay-weapon">
+            <div id="plus">+</div>
+            <button class="choice-btn" id="pay-sol-button">Pay with</button>
+            <button class="choice-btn" id="pay-sushi-button"> Pay with</button>
+            <button class="wallet-btn" id="quit2">Return</button>
+          </div>
+      </div>
+    </div>
+    <div class="modal3">
+      <div class="modal3-box">
+        <div class="modal3-content">
+            <h2 class="modal3-title">Guide</h2>
+            <div id="modal3-text">Hyper Trainoor is the first installment in the toolsuit developed to help aid and accelerate the progress and transition of the original Suteki Collection.<br/><br/>This website/tool allows holders to instantly upgrade their Suteki NFTs to rank<span id="max"> Max.</span><br/><br/>Criteria:<br/><br/>Maximum Rank eligible for upgrade is <span id = max-rank>4 (Oyabun). </span><br/><br/>current methods to pay for upgrades are <span id="payments">Sol, Sushi and weapons</span> <br/></br> <b>Sol:<br/> rank1: <span id="payments">0.5 Sol</span><br/> rank2: <span id="payments">0.4 Sol</span><br/>rank3: <span id="payments">0.3 Sol</span><br/> rank4: <span id="payments">0.2 Sol</span>
+              <br/></br> <b>Sushi + Weapons:<br/> rank1: <span id="payments">1 Weapon + 5000 Sushi</span><br/> rank2: <span id="payments">1 Weapon + 4000 Sushi</span><br/>rank3: <span id="payments">1 Weapon + 3000 Sushi</span><br/> rank4: <span id="payments">1 Weapon + 2000 Sushi</span>
+              <br/><br/><span id="first">First 500 wallets that upgrade with the Sol option will get an airdrop of a random weapon.</span>  
+            </div>
+            <button class="wallet-btn" id="quit3">Return</button>
+          </div>
+        </div>
+    </div>
+      <div class="public-key-box">
+        <div class="public-key-wrapper">
+          <div class="public-key">Public Key</div>
+          <div class="public-key-value">---</div>
+        </div>
+        <button id="disconnect-button">Disconnect</button>
+      </div>           
+      <div class="custom-alert">
+        <p id="custom-alert-message"></p>
+      </div>
+      <div class="weapon_box">
+        <div class="held-weapons">Held Weapons: </div>
+        <span class="close"></span>
+        <div class="seperator"></div>
+        <div id="wep-sizedbox"></div>
+      </div>            
+      <script type="module" src="build/main.js"></script>
+</body>
+</html> 
