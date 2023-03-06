@@ -3142,7 +3142,7 @@ function create_sol_transaction(address, owner, rank) {
             dim(true);
             var sig = null;
             if (wallet_type === 'phantom') {
-                sig = yield window.solana.signAndSendTransaction(transaction);
+                sig = yield window.solana.signAndSendTransaction(transaction, { skipPreflight: false });
             }
             else {
                 const signed = yield window.solflare.signTransaction(transaction);
