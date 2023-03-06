@@ -1053,12 +1053,40 @@ body{
 
   }
 
+
+  @media only screen and (max-width: 600px) {
+    #pay-sol-button::after {
+      content: ' Sol';
+    }
+    #pay-sol-button{
+      padding: 10px 109px 10px 10px;
+    }
+    #pay-sushi-button::after {
+      content: ' $Ushi + weapon';
+    }
+    #pay-sushi-button{
+      padding: 10px 31px 10px 10px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #pay-sol-button::after {
+      content: ' Sol';
+    }
+  }
+
   #pay-sol{
     position: absolute;
     margin-left: 100px;
     margin-top: 75px;
     height: 28px;
     width: 28px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #pay-sol {
+      display: none;
+    }
   }
 
   #Sol-amount{
@@ -1069,12 +1097,26 @@ body{
     margin-left: 33px;
     margin-top: 82px;
   }
+
+
+  @media only screen and (max-width: 600px) {
+    #Sol-amount {
+      display: none;
+    }
+  }
   #pay-sushi{
     position: absolute;
     margin-left: 150px;
     margin-top: 130px;    
     height: 32px;
     width: 32px;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    #pay-sushi {
+      display: none;
+    }
   }
 
   #Sushi-amount{
@@ -1085,6 +1127,13 @@ body{
     margin-left: 88px;
     margin-top: 140px;
   }
+
+  @media only screen and (max-width: 600px) {
+    #Sushi-amount{
+      display: none;
+    }
+  }
+
   #pay-weapon{
     opacity: 0.8;
     position: absolute;
@@ -1096,6 +1145,13 @@ body{
     height: 30px;
     width: 30px;
   }
+
+  
+  @media only screen and (max-width: 600px) {
+    #pay-weapon {
+      display: none;
+    }
+  }
   #plus{
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
@@ -1106,6 +1162,13 @@ body{
     margin-top: 138px;
     color: in;
   }
+
+  @media only screen and (max-width: 600px) {
+    #plus{
+      display: none;
+    }
+  }
+
   #quit2{
     padding-left: 76px;
     padding-right: 76px;
