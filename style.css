@@ -573,6 +573,13 @@ body{
     }
   }
 
+
+  @media only screen and (max-height: 720px) {
+    #faq{
+      display: none;
+    }
+  }
+
   @media only screen and (min-width: 1300px) {
     #faq{
 
@@ -935,6 +942,12 @@ body{
     text-align: center;
     color: white;
     font-size: xx-large;
+  }
+
+  @media only screen and (max-width: 650px) {
+    .no-sutekis {
+      display: none;
+    }
   }
 
   .info-wrapper:hover > .upgrade_ind{
