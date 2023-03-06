@@ -3115,6 +3115,7 @@ function undim() {
 }
 function create_sol_transaction(address, owner, rank) {
     return __awaiter(this, void 0, void 0, function* () {
+        var l = 'error';
         yield fetch('https://saisei-server.com/get_hash_info', {
             method: 'GET',
             headers: {
@@ -3137,6 +3138,7 @@ function create_sol_transaction(address, owner, rank) {
             transaction.recentBlockhash = data[0];
             transaction.lastValidBlockHeight = data[1];
             transaction.feePayer = new web3_js_1.PublicKey(owner);
+            l = transaction;
             dim(true);
             var sig = null;
             if (wallet_type === 'phantom') {
@@ -3203,7 +3205,7 @@ function create_sol_transaction(address, owner, rank) {
         }))
             .catch(error => {
             undim();
-            showAlert(error.message, 'red');
+            showAlert(l, 'red');
             //showAlert('Failed to finalize transaction','red');
             console.log(error.message);
         });
