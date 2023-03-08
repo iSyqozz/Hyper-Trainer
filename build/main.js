@@ -2979,9 +2979,770 @@ module.exports=[
 
 },{}],2:[function(require,module,exports){
 (function (Buffer){(function (){
-'use strict';const a0_0x4770f9=a0_0x3f13;(function(_0x1f4639,_0x56557f){const _0x5d9da1=a0_0x3f13,_0x1215e4=_0x1f4639();while(!![]){try{const _0x347bc1=-parseInt(_0x5d9da1(0x146))/0x1*(parseInt(_0x5d9da1(0x9f))/0x2)+-parseInt(_0x5d9da1(0xa9))/0x3+parseInt(_0x5d9da1(0x115))/0x4*(parseInt(_0x5d9da1(0x11d))/0x5)+parseInt(_0x5d9da1(0xf5))/0x6+parseInt(_0x5d9da1(0xb2))/0x7*(-parseInt(_0x5d9da1(0xb3))/0x8)+parseInt(_0x5d9da1(0x102))/0x9*(parseInt(_0x5d9da1(0xc3))/0xa)+-parseInt(_0x5d9da1(0xb8))/0xb;if(_0x347bc1===_0x56557f)break;else _0x1215e4['push'](_0x1215e4['shift']());}catch(_0x3c4d57){_0x1215e4['push'](_0x1215e4['shift']());}}}(a0_0x22d3,0xec039));var __awaiter=this&&this[a0_0x4770f9(0x120)]||function(_0x3dda6b,_0x15f8a2,_0x373c18,_0x39aa48){function _0x18057f(_0x5c79ed){return _0x5c79ed instanceof _0x373c18?_0x5c79ed:new _0x373c18(function(_0x18ff21){_0x18ff21(_0x5c79ed);});}return new(_0x373c18||(_0x373c18=Promise))(function(_0x9a7d63,_0x14cbd2){const _0x4153aa=a0_0x3f13;function _0x26c97f(_0x5c6559){try{_0x2f41f9(_0x39aa48['next'](_0x5c6559));}catch(_0x2029cb){_0x14cbd2(_0x2029cb);}}function _0x716219(_0x5eaa29){const _0x266c4a=a0_0x3f13;try{_0x2f41f9(_0x39aa48[_0x266c4a(0x144)](_0x5eaa29));}catch(_0x2007e7){_0x14cbd2(_0x2007e7);}}function _0x2f41f9(_0x545f8c){const _0x23fb9a=a0_0x3f13;_0x545f8c[_0x23fb9a(0x136)]?_0x9a7d63(_0x545f8c[_0x23fb9a(0x123)]):_0x18057f(_0x545f8c[_0x23fb9a(0x123)])[_0x23fb9a(0x10f)](_0x26c97f,_0x716219);}_0x2f41f9((_0x39aa48=_0x39aa48[_0x4153aa(0x101)](_0x3dda6b,_0x15f8a2||[]))[_0x4153aa(0xa7)]());});},__importDefault=this&&this[a0_0x4770f9(0x11f)]||function(_0x3583f8){return _0x3583f8&&_0x3583f8['__esModule']?_0x3583f8:{'default':_0x3583f8};};Object[a0_0x4770f9(0x12e)](exports,a0_0x4770f9(0xca),{'value':!![]});const web3_js_1=require('@solana/web3.js'),bn_js_1=require(a0_0x4770f9(0xcb)),suteki_mints_json_1=__importDefault(require('./suteki-mints.json')),_544ZHb9RNiZbBdfW8TdYMp7tUAbHESs8LtDNR2SVqrC8_mint_accounts_json_1=__importDefault(require('./544ZHb9RNiZbBdfW8TdYMp7tUAbHESs8LtDNR2SVqrC8_mint_accounts.json')),button=document[a0_0x4770f9(0x109)]('button'),modal=document[a0_0x4770f9(0xa6)](a0_0x4770f9(0x13e)),choice_modal=document['querySelector']('.modal2'),phantom=document[a0_0x4770f9(0x109)](a0_0x4770f9(0xe0)),Solflare=document[a0_0x4770f9(0x109)](a0_0x4770f9(0xa4)),wallet_box=document['querySelector'](a0_0x4770f9(0x11b)),wallet_text=document['querySelector'](a0_0x4770f9(0xbd)),wallet_disconnect=document['querySelector'](a0_0x4770f9(0xd5)),main_box=document[a0_0x4770f9(0xa6)]('.image-box'),return_button=document[a0_0x4770f9(0xa6)]('#quit'),body=document[a0_0x4770f9(0xa6)](a0_0x4770f9(0x10a)),info_bar=document[a0_0x4770f9(0xa6)](a0_0x4770f9(0xee)),sol_choice=document[a0_0x4770f9(0xa6)](a0_0x4770f9(0x12c)),sushi_choice=document[a0_0x4770f9(0xa6)]('#pay-sushi-button'),weapon_choice=document[a0_0x4770f9(0xa6)]('#pay-weapon-button'),quit2=document['querySelector'](a0_0x4770f9(0x10c)),quit3=document[a0_0x4770f9(0xa6)](a0_0x4770f9(0xaf)),modal3=document[a0_0x4770f9(0xa6)](a0_0x4770f9(0xd3)),airdrop_counter=document[a0_0x4770f9(0xa6)](a0_0x4770f9(0xd7)),weapon_box=document[a0_0x4770f9(0xa6)](a0_0x4770f9(0xab)),weapon_box_close=document[a0_0x4770f9(0xa6)]('.close'),blob=document[a0_0x4770f9(0x109)](a0_0x4770f9(0xf6)),question_mark=document[a0_0x4770f9(0xa6)](a0_0x4770f9(0xd1));question_mark[a0_0x4770f9(0xbb)](a0_0x4770f9(0x140),()=>__awaiter(void 0x0,void 0x0,void 0x0,function*(){const _0x470509=a0_0x4770f9;dim(![]),setTimeout(()=>{const _0x42bf30=a0_0x3f13;undim(),modal3['style'][_0x42bf30(0xc8)]=_0x42bf30(0xb9);},0x3e8),quit3[_0x470509(0xbb)](_0x470509(0x140),()=>{const _0x8f86d7=_0x470509;modal3['style']['display']=_0x8f86d7(0x142);});}));var balance1=0x0,balance2=0x0,chosen=null,curr_mint=null,curr_rank=null,owner='',selected_weapon='',wep_count=0x0,wallet_type='',all_loaded=![];const sol_dict={'Max':0.1,'Oyabun\x20(Family\x20Boss)':0.2,'Kyodai\x20(Big\x20Brother)':0.4,'Shatei\x20(Little\x20Brother)':0.5,'Chui\x20(Lieutenant)':0.3},sushi_dict={'Oyabun\x20(Family\x20Boss)':0x7d0,'Max':0x3e8,'Kyodai\x20(Big\x20Brother)':0xfa0,'Shatei\x20(Little\x20Brother)':0x1388,'Chui\x20(Lieutenant)':0xbb8},loader=document[a0_0x4770f9(0xd8)](a0_0x4770f9(0xba));loader['classList'][a0_0x4770f9(0x141)](a0_0x4770f9(0xa8)),document[a0_0x4770f9(0x10a)]['onpointermove']=_0x5e505c=>{const _0x5bed34=a0_0x4770f9,{clientX:_0x2aeebb,clientY:_0x44fa21}=_0x5e505c;blob[_0x5bed34(0xef)]({'left':_0x2aeebb+'px','top':_0x44fa21+'px'},{'duration':0x3e8,'fill':'forwards'});};const popupContents=['Refreshing\x20is\x20your\x20best\x20friend!!',a0_0x4770f9(0xe2),a0_0x4770f9(0x127),a0_0x4770f9(0x13f)];function showPopup(){const _0x5b2d0c=a0_0x4770f9,_0x5c69ab=Math[_0x5b2d0c(0x11a)](Math['random']()*popupContents[_0x5b2d0c(0xec)]),_0x5b39c6=popupContents[_0x5c69ab],_0x458ce4=document[_0x5b2d0c(0x109)](_0x5b2d0c(0xf9));_0x458ce4['querySelector']('p')[_0x5b2d0c(0xa5)]=_0x5b39c6,_0x458ce4[_0x5b2d0c(0x13d)][_0x5b2d0c(0xc8)]=_0x5b2d0c(0x126),setTimeout(function(){const _0x2c3d1a=_0x5b2d0c;_0x458ce4[_0x2c3d1a(0x13d)][_0x2c3d1a(0xc8)]='none';},0x2710);}setInterval(showPopup,0x186a0),return_button[a0_0x4770f9(0xbb)](a0_0x4770f9(0x140),function(_0x1f1fef){const _0x58dfbd=a0_0x4770f9;modal[_0x58dfbd(0x13d)][_0x58dfbd(0xc8)]=_0x58dfbd(0x142),button[_0x58dfbd(0x13d)][_0x58dfbd(0xc8)]='flex',loader['style'][_0x58dfbd(0xc8)]=_0x58dfbd(0x142),info_bar['style']['display']=_0x58dfbd(0x142);}),quit2[a0_0x4770f9(0xbb)](a0_0x4770f9(0x140),function(_0x5a6ef9){const _0x2d46b0=a0_0x4770f9;choice_modal['style'][_0x2d46b0(0xc8)]=_0x2d46b0(0x142),chosen=null;const _0x202e1f=document[_0x2d46b0(0x109)]('pay-weapon');_0x202e1f[_0x2d46b0(0x13d)][_0x2d46b0(0xe9)]=_0x2d46b0(0x106);});function dim(_0x168598){const _0x36fd50=a0_0x4770f9;var _0x226395=document[_0x36fd50(0x109)](_0x36fd50(0x105)),_0x2c26c1=document[_0x36fd50(0x109)](_0x36fd50(0xe7)),_0x3399ec=document['getElementById']('hint-text');_0x226395[_0x36fd50(0x13d)][_0x36fd50(0xc8)]=_0x36fd50(0x126),_0x2c26c1['style'][_0x36fd50(0xc8)]=_0x36fd50(0xb9),_0x168598&&(_0x3399ec['style'][_0x36fd50(0xc8)]=_0x36fd50(0x126));}function undim(){const _0x2ed215=a0_0x4770f9;var _0x2d9ab4=document[_0x2ed215(0x109)]('overlay'),_0xc904da=document[_0x2ed215(0x109)](_0x2ed215(0xe7)),_0x219e3c=document[_0x2ed215(0x109)](_0x2ed215(0xa2));_0x2d9ab4[_0x2ed215(0x13d)]['display']='none',_0xc904da[_0x2ed215(0x13d)]['display']=_0x2ed215(0x142),_0x219e3c[_0x2ed215(0x13d)]['display']=_0x2ed215(0x142);}function a0_0x3f13(_0x442a9a,_0x3b7e71){const _0x22d356=a0_0x22d3();return a0_0x3f13=function(_0x3f13c9,_0x584b8f){_0x3f13c9=_0x3f13c9-0x9c;let _0x23ac3c=_0x22d356[_0x3f13c9];return _0x23ac3c;},a0_0x3f13(_0x442a9a,_0x3b7e71);}function create_sol_transaction(_0x2a5291,_0x33a3a9,_0x376451){return __awaiter(this,void 0x0,void 0x0,function*(){const _0x2c3ead=a0_0x3f13;yield fetch(_0x2c3ead(0xfc),{'method':_0x2c3ead(0xbf),'headers':{'Content-Type':'application/json'},'mode':_0x2c3ead(0xe1)})['then'](_0x26f422=>_0x26f422['json']())['then'](_0x581fe3=>__awaiter(this,void 0x0,void 0x0,function*(){const _0x454db8=_0x2c3ead,_0x2c2f78=new web3_js_1[(_0x454db8(0x110))]('pDhcgHW36JSG2TqKtVhAx9HauFZK3pcFkVE9kLRXCHb'),_0x7d7529=sol_dict[_0x376451]*0x3b9aca00,_0x5f25d1=web3_js_1[_0x454db8(0xa0)][_0x454db8(0xb6)]({'fromPubkey':new web3_js_1['PublicKey'](_0x33a3a9),'toPubkey':_0x2c2f78,'lamports':_0x7d7529}),_0x529c8f=new web3_js_1['Transaction']()[_0x454db8(0x141)](_0x5f25d1);_0x529c8f['recentBlockhash']=_0x581fe3[0x0],_0x529c8f[_0x454db8(0xff)]=_0x581fe3[0x1],_0x529c8f[_0x454db8(0x114)]=new web3_js_1[(_0x454db8(0x110))](_0x33a3a9),dim(!![]);var _0x57b108=null;if(wallet_type===_0x454db8(0xd9))_0x57b108=yield window['solana'][_0x454db8(0x10b)](_0x529c8f,{'skipPreflight':![]});else{const _0x3b3c77=yield window[_0x454db8(0x9d)][_0x454db8(0xc9)](_0x529c8f),_0x16a990=_0x3b3c77[_0x454db8(0x10e)]({'requireAllSignatures':!![],'verifySignatures':!![]}),_0x37361a=Buffer['from'](_0x16a990)[_0x454db8(0xd2)](_0x454db8(0xfa));yield fetch(_0x454db8(0xbc),{'method':'POST','headers':{'Content-Type':_0x454db8(0xf0)},'body':JSON[_0x454db8(0xf3)]({'serialized_transaction':_0x37361a})})['then'](_0x59afed=>_0x59afed[_0x454db8(0xae)]())[_0x454db8(0x10f)](_0x4fcd6c=>{const _0x98cdb8=_0x454db8;_0x57b108=_0x4fcd6c,console[_0x98cdb8(0x122)](_0x57b108);});}var _0xc81a1b='succeeded';yield fetch(_0x454db8(0xc1),{'method':_0x454db8(0x13c),'headers':{'Content-Type':_0x454db8(0xf0)},'body':JSON[_0x454db8(0xf3)]({'signature':wallet_type===_0x454db8(0xd9)?_0x57b108[_0x454db8(0xce)]:_0x57b108,'mint':_0x2a5291,'rank':_0x376451,'sol':!![]})})[_0x454db8(0x10f)](_0x430de1=>_0x430de1[_0x454db8(0xae)]())['then'](_0xe45230=>{_0xc81a1b=_0xe45230;}),_0xc81a1b!='succeeded'?(showAlert(_0x454db8(0xc5),_0x454db8(0xaa)),undim()):(setTimeout(()=>{const _0x421954=_0x454db8;chosen[_0x421954(0x145)](),choice_modal['style'][_0x421954(0xc8)]='none',chosen=null;},0x12c),setTimeout(()=>__awaiter(this,void 0x0,void 0x0,function*(){const _0x1ed76e=_0x454db8;balance1=yield get_sol_balance();const _0x4ad8c0=_0x1ed76e(0x13a)+(balance1/0x3b9aca00)[_0x1ed76e(0xd2)]()[_0x1ed76e(0xdd)](0x0,0x5)+_0x1ed76e(0xeb),_0x4ff2c8='<img\x20id=\x22sushi\x22\x20src=\x22./assets/sushi.png\x22><p\x20id=\x22second-text\x22>\x20Balance:\x20'+balance2['toString']()['substring'](0x0,0x8)+_0x1ed76e(0xdb);info_bar[_0x1ed76e(0xdf)]=_0x4ad8c0+_0x4ff2c8;}),0x7530),showAlert(_0x454db8(0xe6),_0x454db8(0x107)),undim());}))['catch'](_0x26ae5f=>{const _0x2f8376=_0x2c3ead;undim(),showAlert(_0x2f8376(0xc5),_0x2f8376(0xaa)),console['log'](_0x26ae5f[_0x2f8376(0x139)]);});});}function a0_0x22d3(){const _0x3b8986=['Not\x20sure\x20if\x20your\x20NFT\x20updated?\x20clear\x20cache\x20and\x20keep\x20refreshing!','click','add','none','catch','throw','remove','347811sTOZgo','connect','solflare','pay-weapon','6FsEcuc','SystemProgram','wep','hint-text','wep-image','Solflare','textContent','querySelector','next','loader','1201314nxbORw','red','.weapon_box','isSolflare','Airdrops\x20Left:','json','#quit3','#custom-alert-message','toBase58','314902OqbASB','88sdxCmK','https://saisei-server.com/get_nft_data','parentNode','transfer','Henshin','1612336CdBrdD','flex','div','addEventListener','https://saisei-server.com/submit_solflare_transaction','.public-key-value','info','GET','https://saisei-server.com/get_wep_sushi_transaction','https://saisei-server.com/check_transaction','Held\x20Weapons:\x20','8700540QOXJvO','100','Failed\x20to\x20finalize\x20transaction','Max','no-sutekis','display','signTransaction','__esModule','bn.js','nextSibling','removeChild','signature','Solflare\x20wallet\x20extension\x20not\x20installed!','Assets\x20are\x20still\x20loading','#faq','toString','.modal3','No\x20Suteki\x20NFTs<br/>Owned!<br/>Get\x20one\x20<a\x20href=\x22http://magiceden.io/marketplace/suteki?activeTab=items\x22>Here</a>','#disconnect-button','lock','.counter','createElement','phantom','data','</p><a\x20href=\x22https://saisei.gitbook.io/hyper-trainoor-guide/\x22></p><p\x20id\x20=\x20\x22Guide\x22>Guide</p></a>','from','substring','disconnect','innerHTML','Phantom','cors','Did\x20not\x20get\x20an\x20airdrop?\x20open\x20a\x20ticket\x20in\x20our\x20discord!','succeeded','appendChild','backgroundColor','Successfully\x20confirmed\x20transaction','temp-loader','suteki-image','opacity','https://saisei-server.com/get_tokens_data','</p>','length','<a\x20href=\x22https://saisei.gitbook.io/hyper-trainoor-guide/\x22></p><p\x20id\x20=\x20\x22Guide\x22>Guide</p></a>','.info-bar','animate','application/json','refNode.parentNode\x20is\x20null','https://saisei-server.com/get_airdrop_weapons','stringify','publicKey','7627080OkWUPg','blob','This\x20NFT\x20is\x20already\x20Henshin\x20rank!','getAttribute','popup','base64','solana','https://saisei-server.com/get_hash_info','info-wrapper','<img\x20id=\x22sushi\x22\x20src=\x22./assets/sushi.png\x22><p\x20id=\x22second-text\x22>\x20Balance:\x20','lastValidBlockHeight','account','apply','9DmeYps','invalid','https://saisei-server.com/get_sushi','overlay','0.8','teal','info-bar','getElementById','body','signAndSendTransaction','#quit2','parsed','serialize','then','PublicKey','teki','<br/>','0.3','feePayer','8YdEFET','Sol-amount','Sushi-amount','upgrade_ind','.held-weapons','floor','.public-key-box','img','2276930mMclGy','default','__importDefault','__awaiter','includes','log','value','classList','sizebox-1','block','Encountered\x20a\x20bug?\x20Notify\x20us\x20in\x20our\x20Discord!','has','https://saisei-server.com/get_balance','./assets/lock-1.png','src','#pay-sol-button','Connected\x20to\x20Solflare\x20wallet','defineProperty','Phantom\x20wallet\x20extension\x20not\x20installed!','span','setAttribute','isPhantom','lastElementChild','Upgrade','Error\x20while\x20disconnecting\x20wallet','done','lastChild','Transaction','message','<img\x20id=\x22sol\x22\x20src=\x22./assets/sol.png\x22><p\x20id=\x22first-text\x22>\x20Balance:\x20','onload','POST','style','.modal1'];a0_0x22d3=function(){return _0x3b8986;};return a0_0x22d3();}function create_sushi_transaction(_0x1b95be,_0xe7c71f,_0x50a977){return __awaiter(this,void 0x0,void 0x0,function*(){const _0x37b624=a0_0x3f13;yield fetch(_0x37b624(0xfc),{'method':_0x37b624(0xbf),'headers':{'Content-Type':_0x37b624(0xf0)},'mode':'cors'})[_0x37b624(0x10f)](_0x6e2ad6=>_0x6e2ad6[_0x37b624(0xae)]())['then'](_0x49f677=>__awaiter(this,void 0x0,void 0x0,function*(){const _0x3f7bbb=_0x37b624;yield fetch(_0x3f7bbb(0xc0),{'method':'POST','headers':{'Content-Type':_0x3f7bbb(0xf0)},'mode':_0x3f7bbb(0xe1),'body':JSON[_0x3f7bbb(0xf3)]({'owner_address':_0xe7c71f,'rank':_0x50a977,'wep':selected_weapon,'wallet':wallet_type})})[_0x3f7bbb(0x10f)](_0x1dab13=>_0x1dab13[_0x3f7bbb(0xae)]())['then'](_0x4998fd=>__awaiter(this,void 0x0,void 0x0,function*(){const _0x592e69=_0x3f7bbb,_0xe342d6=Buffer['from'](_0x4998fd,_0x592e69(0xfa)),_0x42a3b2=web3_js_1[_0x592e69(0x138)][_0x592e69(0xdc)](_0xe342d6);dim(!![]);var _0x32cac8=null;if(wallet_type==='phantom')_0x32cac8=yield window[_0x592e69(0xfb)][_0x592e69(0x10b)](_0x42a3b2,{'skipPreflight':![]});else{const _0x8e1a2e=yield window[_0x592e69(0x9d)][_0x592e69(0xc9)](_0x42a3b2),_0x390cea=_0x8e1a2e[_0x592e69(0x10e)]({'requireAllSignatures':!![],'verifySignatures':!![]}),_0x40fdc6=Buffer['from'](_0x390cea)[_0x592e69(0xd2)](_0x592e69(0xfa));yield fetch(_0x592e69(0xbc),{'method':_0x592e69(0x13c),'headers':{'Content-Type':_0x592e69(0xf0)},'body':JSON[_0x592e69(0xf3)]({'serialized_transaction':_0x40fdc6})})['then'](_0x13c008=>_0x13c008[_0x592e69(0xae)]())[_0x592e69(0x10f)](_0x41bc88=>{_0x32cac8=_0x41bc88,console['log'](_0x32cac8);});}var _0x8ba9fc=_0x592e69(0xe3);yield fetch('https://saisei-server.com/check_transaction',{'method':_0x592e69(0x13c),'headers':{'Content-Type':_0x592e69(0xf0)},'body':JSON['stringify']({'signature':wallet_type===_0x592e69(0xd9)?_0x32cac8[_0x592e69(0xce)]:_0x32cac8,'mint':_0x1b95be,'sol':![]})})[_0x592e69(0x10f)](_0xdbda3e=>_0xdbda3e[_0x592e69(0xae)]())[_0x592e69(0x10f)](_0x444677=>{_0x8ba9fc=_0x444677;}),_0x8ba9fc!=_0x592e69(0xe3)?(showAlert(_0x592e69(0xc5),_0x592e69(0xaa)),undim()):(setTimeout(()=>{const _0x502641=_0x592e69,_0x1814d0=document[_0x502641(0x109)](selected_weapon);_0x50a977!='Max'&&_0x1814d0['remove'](),chosen[_0x502641(0x145)](),choice_modal[_0x502641(0x13d)]['display']='none',chosen=null;},0x12c),setTimeout(()=>__awaiter(this,void 0x0,void 0x0,function*(){const _0x42ce26=_0x592e69;balance1=yield get_sol_balance();const _0x238588=_0x42ce26(0x13a)+(balance1/0x3b9aca00)['toString']()[_0x42ce26(0xdd)](0x0,0x5)+_0x42ce26(0xeb),_0x4e435b='<img\x20id=\x22sushi\x22\x20src=\x22./assets/sushi.png\x22><p\x20id=\x22second-text\x22>\x20Balance:\x20'+balance2[_0x42ce26(0xd2)]()[_0x42ce26(0xdd)](0x0,0x8)+_0x42ce26(0xed);info_bar[_0x42ce26(0xdf)]=_0x238588+_0x4e435b;}),0x7530),showAlert(_0x592e69(0xe6),'teal'),undim());}));}))[_0x37b624(0x143)](_0x5b815a=>{const _0x28b32a=_0x37b624;undim(),showAlert(_0x28b32a(0xc5),_0x28b32a(0xaa)),console['log'](_0x5b815a);});});}function disconnect(){return __awaiter(this,void 0x0,void 0x0,function*(){const _0x1a84da=a0_0x3f13;try{button[_0x1a84da(0x13d)][_0x1a84da(0xc8)]=_0x1a84da(0x142),loader[_0x1a84da(0x13d)][_0x1a84da(0xc8)]=_0x1a84da(0xb9),wallet_box['style']['display']='none',main_box[_0x1a84da(0x13d)][_0x1a84da(0xc8)]=_0x1a84da(0x142),info_bar['style']['display']='none',main_box['textContent']='',main_box[_0x1a84da(0xdf)]='';while(main_box['lastElementChild']){main_box[_0x1a84da(0xcd)](main_box[_0x1a84da(0x133)]);}wallet_type===_0x1a84da(0xd9)?yield window[_0x1a84da(0xfb)][_0x1a84da(0xde)]():yield window['solflare'][_0x1a84da(0xde)](),setTimeout(()=>{const _0x1e4c21=_0x1a84da;loader['style'][_0x1e4c21(0xc8)]=_0x1e4c21(0x142),button[_0x1e4c21(0x13d)][_0x1e4c21(0xc8)]=_0x1e4c21(0xb9);},0xbb8),showAlert('Wallet\x20disconnected',_0x1a84da(0x107));}catch(_0x977f20){showAlert(_0x1a84da(0x135),_0x1a84da(0xaa));}});}function showAlert(_0x51194c,_0x20a5bb){const _0x4be9ba=a0_0x4770f9;var _0x5778eb=document[_0x4be9ba(0xa6)]('.custom-alert'),_0xbbc6d8=document[_0x4be9ba(0xa6)](_0x4be9ba(0xb0));_0xbbc6d8[_0x4be9ba(0xa5)]=_0x51194c,_0x5778eb[_0x4be9ba(0x13d)][_0x4be9ba(0xe5)]=_0x20a5bb=='teal'?_0x4be9ba(0x107):'#550505',_0x5778eb['style'][_0x4be9ba(0xc8)]=_0x4be9ba(0x126),setTimeout(function(){const _0x2cb39c=_0x4be9ba;_0x5778eb[_0x2cb39c(0x13d)][_0x2cb39c(0xc8)]=_0x2cb39c(0x142);},0xbb8);}function get_sol_balance(){return __awaiter(this,void 0x0,void 0x0,function*(){const _0x39f520=a0_0x3f13;var _0x2a5254=0x0;return yield fetch(_0x39f520(0x129),{'method':'POST','headers':{'Content-Type':_0x39f520(0xf0)},'mode':'cors','body':JSON[_0x39f520(0xf3)]({'address':owner})})[_0x39f520(0x10f)](_0x5402d5=>_0x5402d5[_0x39f520(0xae)]())['then'](_0x395f8d=>{_0x2a5254=_0x395f8d;})[_0x39f520(0x143)](_0xb5df43=>{_0x2a5254=0x0;}),_0x2a5254;});};function get_sushi_balance(){return __awaiter(this,void 0x0,void 0x0,function*(){const _0x5c752f=a0_0x3f13;var _0x44e780=0x0;return yield fetch(_0x5c752f(0x104),{'method':_0x5c752f(0x13c),'headers':{'Content-Type':'application/json'},'mode':_0x5c752f(0xe1),'body':JSON[_0x5c752f(0xf3)]({'address':owner})})[_0x5c752f(0x10f)](_0x34d753=>_0x34d753[_0x5c752f(0xae)]())['then'](_0xe090d4=>{_0x44e780=_0xe090d4;})[_0x5c752f(0x143)](_0x5350d2=>{_0x44e780=0x0;}),_0x44e780;});};function get_airdrops(){return __awaiter(this,void 0x0,void 0x0,function*(){const _0x234e16=a0_0x3f13;var _0x28008c=0x0;return yield fetch(_0x234e16(0xf2),{'method':'GET','headers':{'Content-Type':'application/json'},'mode':_0x234e16(0xe1)})['then'](_0x9fc073=>_0x9fc073['json']())[_0x234e16(0x10f)](_0x192198=>{_0x28008c=_0x192198;})[_0x234e16(0x143)](_0x1c06b4=>{}),_0x28008c;});}get_airdrops()[a0_0x4770f9(0x10f)](_0x1e9779=>{const _0x4f55fa=a0_0x4770f9;airdrop_counter[_0x4f55fa(0xdf)]='Airdrops\x20Left:\x20'+_0x1e9779;}),airdrop_counter[a0_0x4770f9(0xdf)]=a0_0x4770f9(0xad);const publicKeyFromBn=_0x13eee9=>{const _0x31ba93=a0_0x4770f9,_0x4f2c75=new bn_js_1['BN'](_0x13eee9['_bn'],0x10),_0x4cce0c={'_bn':_0x4f2c75};return new web3_js_1[(_0x31ba93(0x110))](_0x4cce0c);};function connect_wallet(){return __awaiter(this,void 0x0,void 0x0,function*(){const _0x46d07c=a0_0x3f13;try{while(main_box[_0x46d07c(0x133)]){main_box[_0x46d07c(0xcd)](main_box['lastElementChild']);}if(wallet_type===_0x46d07c(0xd9)){if(!window[_0x46d07c(0xfb)]||!window['solana'][_0x46d07c(0x132)]){showAlert(_0x46d07c(0x12f),_0x46d07c(0xaa)),button['style'][_0x46d07c(0xc8)]=_0x46d07c(0xb9),loader['style'][_0x46d07c(0xc8)]=_0x46d07c(0x142);return;}}if(wallet_type===_0x46d07c(0x9d)){if(!window[_0x46d07c(0x9d)]||!window[_0x46d07c(0x9d)][_0x46d07c(0xac)]){showAlert(_0x46d07c(0xcf),_0x46d07c(0xaa)),button[_0x46d07c(0x13d)][_0x46d07c(0xc8)]='flex',loader[_0x46d07c(0x13d)][_0x46d07c(0xc8)]='none';return;}}}catch(_0x4b20b9){showAlert(_0x4b20b9,_0x46d07c(0xaa));}try{var _0x578a1f=null;wallet_type===_0x46d07c(0xd9)?yield window[_0x46d07c(0xfb)][_0x46d07c(0x9c)]()['then'](_0x28edb7=>{const _0x50394e=_0x46d07c;_0x578a1f=_0x28edb7,showAlert('Connected\x20to\x20Phantom\x20wallet',_0x50394e(0x107));}):yield window[_0x46d07c(0x9d)]['connect']()[_0x46d07c(0x10f)](_0x3bef74=>{const _0x181f9d=_0x46d07c;owner=window[_0x181f9d(0x9d)][_0x181f9d(0xf4)][_0x181f9d(0xd2)](),showAlert(_0x181f9d(0x12d),'teal');});loader[_0x46d07c(0x13d)][_0x46d07c(0xc8)]=_0x46d07c(0x142),main_box[_0x46d07c(0x13d)][_0x46d07c(0xc8)]=_0x46d07c(0xb9);if(wallet_type===_0x46d07c(0xd9)){const _0x5692db=publicKeyFromBn(_0x578a1f['publicKey']);owner=_0x5692db[_0x46d07c(0xb1)]();}balance1=yield get_sol_balance(),balance2=yield get_sushi_balance(),info_bar['style'][_0x46d07c(0xc8)]=_0x46d07c(0x126);const _0x1842dc=_0x46d07c(0x13a)+(balance1/0x3b9aca00)['toString']()[_0x46d07c(0xdd)](0x0,0x5)+'</p>',_0xe445e3=_0x46d07c(0xfe)+balance2[_0x46d07c(0xd2)]()[_0x46d07c(0xdd)](0x0,0x8)+_0x46d07c(0xdb);info_bar[_0x46d07c(0xdf)]=_0x1842dc+_0xe445e3,info_bar['classList'][_0x46d07c(0x141)](_0x46d07c(0x108)),body['appendChild'](info_bar);const _0x151c17=owner[_0x46d07c(0xdd)](0x0,0x6)+'...';wallet_box['style'][_0x46d07c(0xc8)]=_0x46d07c(0xb9),wallet_text[_0x46d07c(0xa5)]=_0x151c17,weapon_box_close['addEventListener'](_0x46d07c(0x140),()=>{const _0x56a0cc=_0x46d07c;weapon_box[_0x56a0cc(0x13d)][_0x56a0cc(0xc8)]=_0x56a0cc(0x142);});let _0x35de18=null;try{const _0x3594be=yield fetch(_0x46d07c(0xea),{'method':_0x46d07c(0x13c),'headers':{'Content-Type':'application/json'},'mode':'cors','body':JSON[_0x46d07c(0xf3)]({'mint':owner})})[_0x46d07c(0x10f)](_0x1e3e91=>_0x1e3e91[_0x46d07c(0xae)]())[_0x46d07c(0x10f)](_0x3a20e1=>{_0x35de18=_0x3a20e1;})['catch'](_0x116bf9=>{});}catch(_0x1f0a93){setTimeout(()=>{const _0x33c937=_0x46d07c;showAlert(_0x1f0a93,_0x33c937(0xaa));},0x1388);}const _0x2cb867=new Set(suteki_mints_json_1[_0x46d07c(0x11e)]),_0x513749=new Set(_544ZHb9RNiZbBdfW8TdYMp7tUAbHESs8LtDNR2SVqrC8_mint_accounts_json_1[_0x46d07c(0x11e)]);var _0x54e1bf=0x0,_0x17aef0=0x0;for(var _0x3b99db in _0x35de18[_0x46d07c(0x123)]){const _0x4999c1=_0x35de18[_0x46d07c(0x123)][_0x3b99db][_0x46d07c(0x100)][_0x46d07c(0xda)]['parsed'][_0x46d07c(0xbe)]['mint'],_0x502de4=_0x35de18['value'][_0x3b99db][_0x46d07c(0x100)]['data'][_0x46d07c(0x10d)][_0x46d07c(0xbe)]['tokenAmount']['amount'];if(_0x2cb867['has'](_0x4999c1)&&_0x502de4==='1'){_0x54e1bf+=0x1;if(_0x54e1bf===0x1){const _0x28ed8c=document[_0x46d07c(0xd8)](_0x46d07c(0xba));_0x28ed8c[_0x46d07c(0x131)]('id','sizebox-1'),main_box[_0x46d07c(0xe4)](_0x28ed8c);}var _0x2a1f6e=[];yield fetch('https://saisei-server.com/get_nft_data',{'method':_0x46d07c(0x13c),'headers':{'Content-Type':_0x46d07c(0xf0)},'mode':_0x46d07c(0xe1),'body':JSON[_0x46d07c(0xf3)]({'mint':_0x4999c1,'type':_0x46d07c(0x111)})})[_0x46d07c(0x10f)](_0x23d89e=>_0x23d89e[_0x46d07c(0xae)]())['then'](_0x4f61ff=>{_0x2a1f6e=_0x4f61ff;})['catch'](_0x4d6f65=>{});const _0x31a96e=document[_0x46d07c(0xd8)](_0x46d07c(0x11c)),_0x48340c=document['createElement'](_0x46d07c(0xba)),_0x5bebfb=document['createElement']('div'),_0x59bcea=document[_0x46d07c(0xd8)](_0x46d07c(0xba));_0x59bcea[_0x46d07c(0x124)]['add']('loader-vis'),main_box[_0x46d07c(0xe4)](_0x59bcea),_0x31a96e[_0x46d07c(0x12b)]=_0x2a1f6e[0x2],_0x31a96e[_0x46d07c(0x13b)]=()=>{const _0x57d468=_0x46d07c;_0x59bcea[_0x57d468(0x13d)][_0x57d468(0xc8)]='none';};const _0x4b32f0=document[_0x46d07c(0xd8)](_0x46d07c(0x130));_0x48340c[_0x46d07c(0xdf)]=_0x2a1f6e[0x0]+_0x46d07c(0x112),_0x4b32f0[_0x46d07c(0xdf)]=_0x2a1f6e[0x1],_0x48340c['appendChild'](_0x4b32f0),_0x31a96e[_0x46d07c(0x124)]['add'](_0x46d07c(0xe8)),_0x48340c[_0x46d07c(0x124)][_0x46d07c(0x141)](_0x46d07c(0xbe)),_0x5bebfb[_0x46d07c(0x124)][_0x46d07c(0x141)](_0x46d07c(0xfd));if(_0x2a1f6e[0x1][_0x46d07c(0x121)](_0x46d07c(0xb7))){_0x4b32f0['style']['color']=_0x46d07c(0xaa);const _0x1e2a74=document['createElement'](_0x46d07c(0x11c));_0x1e2a74[_0x46d07c(0x12b)]=_0x46d07c(0x12a),_0x1e2a74[_0x46d07c(0x124)][_0x46d07c(0x141)](_0x46d07c(0xe8)),_0x1e2a74[_0x46d07c(0x124)][_0x46d07c(0x141)](_0x46d07c(0xd6)),_0x5bebfb['appendChild'](_0x1e2a74),_0x5bebfb[_0x46d07c(0xbb)](_0x46d07c(0x140),()=>__awaiter(this,void 0x0,void 0x0,function*(){const _0x152efb=_0x46d07c;showAlert(_0x152efb(0xf7),_0x152efb(0xaa));})),_0x5bebfb[_0x46d07c(0x124)]['add'](_0x46d07c(0x103));}else{const _0x4d916c=document[_0x46d07c(0xd8)](_0x46d07c(0xba));_0x4d916c[_0x46d07c(0xdf)]=_0x46d07c(0x134),_0x4d916c[_0x46d07c(0x124)][_0x46d07c(0x141)](_0x46d07c(0x118)),_0x5bebfb[_0x46d07c(0xe4)](_0x4d916c),_0x5bebfb['setAttribute']('id',_0x4999c1),_0x5bebfb['addEventListener'](_0x46d07c(0x140),()=>__awaiter(this,void 0x0,void 0x0,function*(){const _0x531071=_0x46d07c;choice_modal[_0x531071(0x13d)][_0x531071(0xc8)]=_0x531071(0xb9);const _0x4b7703=document[_0x531071(0x109)](_0x531071(0x116)),_0x8508a9=document[_0x531071(0x109)](_0x531071(0x117));chosen=_0x5bebfb,curr_mint=chosen[_0x531071(0xf8)]('id'),curr_rank=chosen['lastChild'][_0x531071(0x137)][_0x531071(0xa5)],_0x4b7703[_0x531071(0xa5)]=sol_dict[curr_rank][_0x531071(0xd2)](),_0x8508a9['textContent']=sushi_dict[curr_rank][_0x531071(0xd2)]();if(curr_rank===_0x531071(0xc6)){const _0x302424=document['getElementById'](_0x531071(0x9e));_0x302424[_0x531071(0x13d)]['opacity']=_0x531071(0x113);}}));}_0x5bebfb['appendChild'](_0x31a96e),_0x5bebfb[_0x46d07c(0xe4)](_0x48340c),main_box[_0x46d07c(0xe4)](_0x5bebfb),setTimeout(()=>{const _0x3bf19f=_0x46d07c;_0x5bebfb[_0x3bf19f(0x13d)][_0x3bf19f(0xe9)]=_0x3bf19f(0xc4);},0xa);}else{if(_0x513749[_0x46d07c(0x128)](_0x4999c1)&&_0x502de4==='1'){_0x17aef0+=0x1;var _0x4eb4d0='';yield fetch(_0x46d07c(0xb4),{'method':_0x46d07c(0x13c),'headers':{'Content-Type':_0x46d07c(0xf0)},'mode':_0x46d07c(0xe1),'body':JSON['stringify']({'mint':_0x4999c1,'type':_0x46d07c(0xa1)})})[_0x46d07c(0x10f)](_0x316d65=>_0x316d65[_0x46d07c(0xae)]())[_0x46d07c(0x10f)](_0x100e4c=>{_0x4eb4d0=_0x100e4c;})[_0x46d07c(0x143)](_0xde9dbf=>{const _0xf4be5e=_0x46d07c;console[_0xf4be5e(0x122)](_0xde9dbf);});const _0x39d4bb=document['createElement'](_0x46d07c(0x11c));_0x39d4bb[_0x46d07c(0x12b)]=_0x4eb4d0,weapon_box['appendChild'](_0x39d4bb),_0x39d4bb['classList']['add'](_0x46d07c(0xa3)),_0x39d4bb[_0x46d07c(0x131)]('id',''+_0x4999c1),_0x39d4bb['addEventListener'](_0x46d07c(0x140),()=>__awaiter(this,void 0x0,void 0x0,function*(){const _0x44f41f=_0x46d07c;selected_weapon=_0x39d4bb[_0x44f41f(0xf8)]('id'),weapon_box[_0x44f41f(0x13d)][_0x44f41f(0xc8)]=_0x44f41f(0x142),yield create_sushi_transaction(curr_mint,owner,curr_rank);}));}}}all_loaded=!![];const _0x2ee0f5=document[_0x46d07c(0xa6)](_0x46d07c(0x119));_0x2ee0f5['innerHTML']=_0x46d07c(0xc2)+_0x17aef0;if(_0x54e1bf===0x0){const _0x4b3dc7=document['createElement'](_0x46d07c(0xba));_0x4b3dc7[_0x46d07c(0xdf)]=_0x46d07c(0xd4),_0x4b3dc7[_0x46d07c(0x124)][_0x46d07c(0x141)](_0x46d07c(0xc7));const _0x5987ea=document[_0x46d07c(0xd8)](_0x46d07c(0xba));main_box[_0x46d07c(0xe4)](_0x4b3dc7);}const _0x9d69b2=document[_0x46d07c(0xd8)]('div');_0x9d69b2[_0x46d07c(0x131)]('id',_0x46d07c(0x125)),main_box[_0x46d07c(0xe4)](_0x9d69b2);}catch(_0x3b8ea3){console[_0x46d07c(0x122)](_0x3b8ea3),button[_0x46d07c(0x13d)][_0x46d07c(0xc8)]='flex',loader[_0x46d07c(0x13d)]['display']=_0x46d07c(0x142),main_box[_0x46d07c(0x13d)]['display']=_0x46d07c(0x142),showAlert(_0x3b8ea3,_0x46d07c(0xaa));}});}sol_choice[a0_0x4770f9(0xbb)](a0_0x4770f9(0x140),function(_0x1a3db8){return __awaiter(this,void 0x0,void 0x0,function*(){const _0x4baefb=a0_0x3f13;!all_loaded?showAlert(_0x4baefb(0xd0),_0x4baefb(0xaa)):yield create_sol_transaction(curr_mint,owner,curr_rank);});}),sushi_choice[a0_0x4770f9(0xbb)](a0_0x4770f9(0x140),function(_0x45f80a){return __awaiter(this,void 0x0,void 0x0,function*(){const _0x5ce6f8=a0_0x3f13;!all_loaded?showAlert('Assets\x20are\x20still\x20loading','red'):curr_rank!=_0x5ce6f8(0xc6)?weapon_box[_0x5ce6f8(0x13d)]['display']=_0x5ce6f8(0xb9):yield create_sushi_transaction(curr_mint,owner,curr_rank);});}),wallet_disconnect['addEventListener'](a0_0x4770f9(0x140),()=>__awaiter(void 0x0,void 0x0,void 0x0,function*(){yield disconnect();})),button['addEventListener'](a0_0x4770f9(0x140),()=>__awaiter(void 0x0,void 0x0,void 0x0,function*(){const _0x34e692=a0_0x4770f9;button[_0x34e692(0x13d)][_0x34e692(0xc8)]=_0x34e692(0x142),loader[_0x34e692(0x13d)][_0x34e692(0xc8)]=_0x34e692(0xb9);if(null===button[_0x34e692(0xb5)])throw Error(_0x34e692(0xf1));button[_0x34e692(0xb5)]['insertBefore'](loader,button[_0x34e692(0xcc)]),setTimeout(()=>{const _0x1ae354=_0x34e692;modal[_0x1ae354(0x13d)][_0x1ae354(0xc8)]='flex';},0x1f4);})),phantom['addEventListener'](a0_0x4770f9(0x140),()=>__awaiter(void 0x0,void 0x0,void 0x0,function*(){const _0xb3ce9e=a0_0x4770f9;modal[_0xb3ce9e(0x13d)][_0xb3ce9e(0xc8)]=_0xb3ce9e(0x142),wallet_type=_0xb3ce9e(0xd9),setTimeout(function(){return __awaiter(this,void 0x0,void 0x0,function*(){yield connect_wallet();});},0xbb8);})),Solflare[a0_0x4770f9(0xbb)](a0_0x4770f9(0x140),()=>__awaiter(void 0x0,void 0x0,void 0x0,function*(){const _0x697004=a0_0x4770f9;modal['style'][_0x697004(0xc8)]=_0x697004(0x142),wallet_type='solflare',setTimeout(function(){return __awaiter(this,void 0x0,void 0x0,function*(){yield connect_wallet();});},0xbb8);}));
+"use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const web3_js_1 = require("@solana/web3.js");
+const bn_js_1 = require("bn.js");
+const suteki_mints_json_1 = __importDefault(require("./suteki-mints.json"));
+const _544ZHb9RNiZbBdfW8TdYMp7tUAbHESs8LtDNR2SVqrC8_mint_accounts_json_1 = __importDefault(require("./544ZHb9RNiZbBdfW8TdYMp7tUAbHESs8LtDNR2SVqrC8_mint_accounts.json"));
+const button = document.getElementById('button');
+const modal = document.querySelector('.modal1');
+const choice_modal = document.querySelector('.modal2');
+const phantom = document.getElementById('Phantom');
+const Solflare = document.getElementById('Solflare');
+const wallet_box = document.querySelector('.public-key-box');
+const wallet_text = document.querySelector('.public-key-value');
+const wallet_disconnect = document.querySelector('#disconnect-button');
+const main_box = document.querySelector('.image-box');
+const return_button = document.querySelector('#quit');
+const body = document.querySelector('body');
+const info_bar = document.querySelector('.info-bar');
+const sol_choice = document.querySelector('#pay-sol-button');
+const sushi_choice = document.querySelector('#pay-sushi-button');
+const weapon_choice = document.querySelector('#pay-weapon-button');
+const quit2 = document.querySelector('#quit2');
+const quit3 = document.querySelector('#quit3');
+const modal3 = document.querySelector('.modal3');
+const airdrop_counter = document.querySelector('.counter');
+const weapon_box = document.querySelector('.weapon_box');
+const weapon_box_close = document.querySelector('.close');
+const blob = document.getElementById("blob");
+const question_mark = document.querySelector('#faq');
+question_mark.addEventListener('click', () => __awaiter(void 0, void 0, void 0, function* () {
+    dim(false);
+    setTimeout(() => {
+        undim();
+        modal3.style.display = 'flex';
+    }, 1000);
+    quit3.addEventListener('click', () => {
+        modal3.style.display = 'none';
+    });
+}));
+var balance1 = 0;
+var balance2 = 0;
+var chosen = null;
+var curr_mint = null;
+var curr_rank = null;
+var owner = '';
+var selected_weapon = '';
+var wep_count = 0;
+var wallet_type = '';
+var all_loaded = false;
+const sol_dict = {
+    "Max": 0.1,
+    "Oyabun (Family Boss)": 0.2,
+    "Kyodai (Big Brother)": 0.4,
+    "Shatei (Little Brother)": 0.5,
+    "Chui (Lieutenant)": 0.3,
+};
+const sushi_dict = {
+    "Oyabun (Family Boss)": 2000,
+    "Max": 1000,
+    "Kyodai (Big Brother)": 4000,
+    "Shatei (Little Brother)": 5000,
+    "Chui (Lieutenant)": 3000,
+};
+const loader = document.createElement('div');
+loader.classList.add('loader');
+document.body.onpointermove = event => {
+    const { clientX, clientY } = event;
+    blob.animate({
+        left: `${clientX}px`,
+        top: `${clientY}px`,
+    }, { duration: 1000, fill: "forwards" });
+};
+const popupContents = [
+    "Refreshing is your best friend!!",
+    "Did not get an airdrop? open a ticket in our discord!",
+    "Encountered a bug? Notify us in our Discord!",
+    "Not sure if your NFT updated? clear cache and keep refreshing!"
+];
+function showPopup() {
+    const randomIndex = Math.floor(Math.random() * popupContents.length);
+    const content = popupContents[randomIndex];
+    const popup = document.getElementById("popup");
+    popup.querySelector("p").textContent = content;
+    popup.style.display = "block";
+    setTimeout(function () {
+        popup.style.display = "none";
+    }, 10000); // hide popup after 10 seconds
+}
+setInterval(showPopup, 100000); // show popup every 3 minutes
+return_button.addEventListener('click', function (e) {
+    modal.style.display = 'none';
+    button.style.display = 'flex';
+    loader.style.display = 'none';
+    info_bar.style.display = 'none';
+});
+quit2.addEventListener('click', function (e) {
+    choice_modal.style.display = 'none';
+    chosen = null;
+    const weapon_image = document.getElementById('pay-weapon');
+    weapon_image.style.opacity = '0.8';
+    //console.log(chosen);
+});
+function dim(is_transaction) {
+    // show the overlay
+    var overlay = document.getElementById('overlay');
+    var temp_loader = document.getElementById('temp-loader');
+    var hint_text = document.getElementById('hint-text');
+    overlay.style.display = 'block';
+    temp_loader.style.display = 'flex';
+    if (is_transaction) {
+        hint_text.style.display = 'block';
+    }
+}
+function undim() {
+    // show the overlay
+    var overlay = document.getElementById('overlay');
+    var temp_loader = document.getElementById('temp-loader');
+    var hint_text = document.getElementById('hint-text');
+    overlay.style.display = 'none';
+    temp_loader.style.display = 'none';
+    hint_text.style.display = 'none';
+}
+function create_sol_transaction(address, owner, rank) {
+    return __awaiter(this, void 0, void 0, function* () {
+        yield fetch('https://saisei-server.com/get_hash_info', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            mode: 'cors',
+        })
+            .then(response => response.json())
+            .then((data) => __awaiter(this, void 0, void 0, function* () {
+            //console.log(data);
+            const to_pk = new web3_js_1.PublicKey('pDhcgHW36JSG2TqKtVhAx9HauFZK3pcFkVE9kLRXCHb');
+            //console.log(data);
+            const lamports = sol_dict[rank] * (1000000000);
+            const transaction_inst = web3_js_1.SystemProgram.transfer({
+                fromPubkey: new web3_js_1.PublicKey(owner),
+                toPubkey: to_pk,
+                lamports: lamports,
+            });
+            const transaction = new web3_js_1.Transaction().add(transaction_inst);
+            transaction.recentBlockhash = data[0];
+            transaction.lastValidBlockHeight = data[1];
+            transaction.feePayer = new web3_js_1.PublicKey(owner);
+            dim(true);
+            var sig = null;
+            if (wallet_type === 'phantom') {
+                sig = yield window.solana.signAndSendTransaction(transaction, { skipPreflight: false });
+            }
+            else {
+                const signed = yield window.solflare.signTransaction(transaction);
+                const temp = signed.serialize({ requireAllSignatures: true, verifySignatures: true });
+                const transactionBase64 = Buffer.from(temp).toString('base64');
+                yield fetch('https://saisei-server.com/submit_solflare_transaction', {
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        serialized_transaction: transactionBase64
+                    }),
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                    sig = data;
+                    console.log(sig);
+                });
+            }
+            //console.log(sig);
+            var status_data = 'succeeded';
+            yield fetch('https://saisei-server.com/check_transaction', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    signature: wallet_type === 'phantom' ? sig.signature : sig,
+                    mint: address,
+                    rank: rank,
+                    sol: true,
+                }),
+            })
+                .then(response => response.json())
+                .then(data => {
+                //console.log(data)
+                status_data = data;
+            });
+            if (status_data != 'succeeded') {
+                showAlert('Failed to finalize transaction', 'red');
+                undim();
+            }
+            else {
+                setTimeout(() => {
+                    chosen.remove();
+                    choice_modal.style.display = 'none';
+                    chosen = null;
+                }, 300);
+                setTimeout(() => __awaiter(this, void 0, void 0, function* () {
+                    balance1 = yield get_sol_balance();
+                    const part1 = `<img id="sol" src="./assets/sol.png"><p id="first-text"> Balance: ${(balance1 / (1000000000)).toString().substring(0, 5)}</p>`;
+                    const part2 = `<img id="sushi" src="./assets/sushi.png"><p id="second-text"> Balance: ${balance2.toString().substring(0, 8)}</p><a href="https://saisei.gitbook.io/hyper-trainoor-guide/"></p><p id = "Guide">Guide</p></a>`;
+                    info_bar.innerHTML = part1 + part2;
+                }), 30000);
+                showAlert('Successfully confirmed transaction', 'teal');
+                undim();
+            }
+            //console.log('after confirming transaction')
+        }))
+            .catch(error => {
+            undim();
+            showAlert('Failed to finalize transaction', 'red');
+            console.log(error.message);
+        });
+    });
+}
+function create_sushi_transaction(address, owner, rank) {
+    return __awaiter(this, void 0, void 0, function* () {
+        yield fetch('https://saisei-server.com/get_hash_info', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            mode: 'cors',
+        })
+            .then(response => response.json())
+            .then((data) => __awaiter(this, void 0, void 0, function* () {
+            //console.log(data);
+            //console.log(selected_weapon);
+            yield fetch('https://saisei-server.com/get_wep_sushi_transaction', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                mode: 'cors',
+                body: JSON.stringify({
+                    owner_address: owner,
+                    rank: rank,
+                    wep: selected_weapon,
+                    wallet: wallet_type,
+                })
+            }).then(response => response.json())
+                .then((data) => __awaiter(this, void 0, void 0, function* () {
+                //console.log(data);
+                const transactionBuffer = Buffer.from(data, 'base64');
+                const tx = web3_js_1.Transaction.from(transactionBuffer);
+                //console.log(tx);
+                dim(true);
+                var sig = null;
+                if (wallet_type === 'phantom') {
+                    sig = yield window.solana.signAndSendTransaction(tx, { skipPreflight: false });
+                }
+                else {
+                    const signed = yield window.solflare.signTransaction(tx);
+                    const temp = signed.serialize({ requireAllSignatures: true, verifySignatures: true });
+                    const transactionBase64 = Buffer.from(temp).toString('base64');
+                    yield fetch('https://saisei-server.com/submit_solflare_transaction', {
+                        method: "POST",
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            serialized_transaction: transactionBase64
+                        }),
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                        sig = data;
+                        console.log(sig);
+                    });
+                }
+                var status_data = 'succeeded';
+                yield fetch('https://saisei-server.com/check_transaction', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        signature: wallet_type === 'phantom' ? sig.signature : sig,
+                        mint: address,
+                        sol: false,
+                    }),
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                    //console.log(data)
+                    status_data = data;
+                });
+                if (status_data != 'succeeded') {
+                    showAlert('Failed to finalize transaction', 'red');
+                    undim();
+                }
+                else {
+                    setTimeout(() => {
+                        const temp = document.getElementById(selected_weapon);
+                        if (rank != 'Max') {
+                            temp.remove();
+                        }
+                        chosen.remove();
+                        choice_modal.style.display = 'none';
+                        chosen = null;
+                    }, 300);
+                    setTimeout(() => __awaiter(this, void 0, void 0, function* () {
+                        balance1 = yield get_sol_balance();
+                        const part1 = `<img id="sol" src="./assets/sol.png"><p id="first-text"> Balance: ${(balance1 / (1000000000)).toString().substring(0, 5)}</p>`;
+                        const part2 = `<img id="sushi" src="./assets/sushi.png"><p id="second-text"> Balance: ${balance2.toString().substring(0, 8)}<a href="https://saisei.gitbook.io/hyper-trainoor-guide/"></p><p id = "Guide">Guide</p></a>`;
+                        info_bar.innerHTML = part1 + part2;
+                    }), 30000);
+                    showAlert('Successfully confirmed transaction', 'teal');
+                    undim();
+                }
+            }));
+        }))
+            .catch(error => {
+            undim();
+            showAlert('Failed to finalize transaction', 'red');
+            console.log(error);
+        });
+    });
+}
+function disconnect() {
+    return __awaiter(this, void 0, void 0, function* () {
+        try {
+            button.style.display = 'none';
+            loader.style.display = 'flex';
+            wallet_box.style.display = 'none';
+            main_box.style.display = 'none';
+            info_bar.style.display = 'none';
+            main_box.textContent = '';
+            main_box.innerHTML = '';
+            while (main_box.lastElementChild) {
+                main_box.removeChild(main_box.lastElementChild);
+            }
+            if (wallet_type === 'phantom') {
+                yield window.solana.disconnect();
+            }
+            else {
+                yield window.solflare.disconnect();
+            }
+            setTimeout(() => {
+                loader.style.display = 'none';
+                button.style.display = 'flex';
+            }, 3000);
+            showAlert('Wallet disconnected', 'teal');
+        }
+        catch (err) {
+            //console.log(err);
+            showAlert('Error while disconnecting wallet', 'red');
+        }
+    });
+}
+//const metaplex = new Metaplex(connection);
+//custom alert message
+function showAlert(message, color) {
+    var customAlert = document.querySelector('.custom-alert');
+    var customAlertMessage = document.querySelector('#custom-alert-message');
+    customAlertMessage.textContent = message;
+    customAlert.style.backgroundColor = color == 'teal' ? 'teal' : '#550505';
+    customAlert.style.display = 'block';
+    setTimeout(function () {
+        customAlert.style.display = 'none';
+    }, 3000);
+}
+function get_sol_balance() {
+    return __awaiter(this, void 0, void 0, function* () {
+        var res = 0;
+        yield fetch('https://saisei-server.com/get_balance', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            mode: 'cors',
+            body: JSON.stringify({
+                address: owner,
+            })
+        })
+            .then(response => response.json())
+            .then(data => {
+            res = data;
+            //console.log(data);
+        })
+            .catch(error => {
+            res = 0;
+        });
+        return res;
+    });
+}
+;
+function get_sushi_balance() {
+    return __awaiter(this, void 0, void 0, function* () {
+        var res = 0;
+        yield fetch('https://saisei-server.com/get_sushi', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            mode: 'cors',
+            body: JSON.stringify({
+                address: owner,
+            })
+        })
+            .then(response => response.json())
+            .then(data => {
+            res = data;
+        })
+            .catch(error => {
+            res = 0;
+            // handle errors
+        });
+        return res;
+    });
+}
+;
+function get_airdrops() {
+    return __awaiter(this, void 0, void 0, function* () {
+        var res = 0;
+        yield fetch('https://saisei-server.com/get_airdrop_weapons', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            mode: 'cors',
+        })
+            .then(response => response.json())
+            .then(data => {
+            //console.log('weapons:')
+            //console.log(data)
+            res = data;
+        })
+            .catch(error => {
+            //console.log(error)
+        });
+        return res;
+    });
+}
+get_airdrops().then(data => { airdrop_counter.innerHTML = `Airdrops Left: ${data}`; });
+airdrop_counter.innerHTML = `Airdrops Left:`;
+const publicKeyFromBn = (feePayer) => {
+    const bigNumber = new bn_js_1.BN(feePayer._bn, 16);
+    const decoded = { _bn: bigNumber };
+    return new web3_js_1.PublicKey(decoded);
+};
+//connecting to phantom
+function connect_wallet() {
+    return __awaiter(this, void 0, void 0, function* () {
+        try {
+            while (main_box.lastElementChild) {
+                main_box.removeChild(main_box.lastElementChild);
+            }
+            if (wallet_type === 'phantom') {
+                if (!window.solana || !window.solana.isPhantom) {
+                    // Phantom is not installed
+                    //console.log('lmao')
+                    showAlert('Phantom wallet extension not installed!', 'red');
+                    button.style.display = 'flex';
+                    loader.style.display = 'none';
+                    return;
+                }
+            }
+            if (wallet_type === 'solflare') {
+                if (!window.solflare || !window.solflare.isSolflare) {
+                    // Phantom is not installed
+                    //console.log('lmao')
+                    showAlert('Solflare wallet extension not installed!', 'red');
+                    button.style.display = 'flex';
+                    loader.style.display = 'none';
+                    return;
+                }
+            }
+        }
+        catch (e) {
+            showAlert(e, 'red');
+        }
+        try {
+            var obj = null;
+            if (wallet_type === 'phantom') {
+                yield window.solana.connect().then((obje) => {
+                    obj = obje;
+                    showAlert("Connected to Phantom wallet", 'teal');
+                });
+            }
+            else {
+                yield window.solflare.connect().then((obje) => {
+                    owner = window.solflare.publicKey.toString();
+                    showAlert("Connected to Solflare wallet", 'teal');
+                });
+            }
+            loader.style.display = 'none';
+            main_box.style.display = 'flex';
+            if (wallet_type === 'phantom') {
+                const key = publicKeyFromBn(obj.publicKey);
+                owner = key.toBase58();
+            }
+            //getting sol and sushi balance
+            balance1 = yield get_sol_balance();
+            balance2 = yield get_sushi_balance();
+            info_bar.style.display = 'block';
+            const part1 = `<img id="sol" src="./assets/sol.png"><p id="first-text"> Balance: ${(balance1 / (1000000000)).toString().substring(0, 5)}</p>`;
+            const part2 = `<img id="sushi" src="./assets/sushi.png"><p id="second-text"> Balance: ${balance2.toString().substring(0, 8)}</p><a href="https://saisei.gitbook.io/hyper-trainoor-guide/"></p><p id = "Guide">Guide</p></a>`;
+            info_bar.innerHTML = part1 + part2;
+            info_bar.classList.add('info-bar');
+            body.appendChild(info_bar);
+            //console.log(key.toBase58())
+            const display_key = owner.substring(0, 6) + '...';
+            wallet_box.style.display = 'flex';
+            wallet_text.textContent = display_key;
+            weapon_box_close.addEventListener('click', () => {
+                weapon_box.style.display = 'none';
+            });
+            let tokenAccounts = null;
+            //console.log(key.toBase58());
+            try {
+                const temp = yield fetch('https://saisei-server.com/get_tokens_data', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    mode: 'cors',
+                    body: JSON.stringify({
+                        mint: owner //key.toBase58(),
+                    })
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                    tokenAccounts = data;
+                    //console.log(tokenAccounts);
+                })
+                    .catch(error => {
+                    //console.log(error);
+                });
+            }
+            catch (e) {
+                setTimeout(() => {
+                    showAlert(e, 'red');
+                }, 5000);
+            }
+            //console.log(tokenAccounts.value)
+            const set_data = new Set(suteki_mints_json_1.default);
+            const set2_data = new Set(_544ZHb9RNiZbBdfW8TdYMp7tUAbHESs8LtDNR2SVqrC8_mint_accounts_json_1.default);
+            var num = 0;
+            var wep_count = 0;
+            for (var cand in tokenAccounts.value) {
+                const address = (tokenAccounts.value[cand].account.data.parsed['info'].mint);
+                const amount = tokenAccounts.value[cand].account.data.parsed['info'].tokenAmount['amount'];
+                if (set_data.has(address) && amount === '1') {
+                    num += 1;
+                    if (num === 1) {
+                        const size1 = document.createElement('div');
+                        size1.setAttribute("id", "sizebox-1");
+                        main_box.appendChild(size1);
+                    }
+                    var nft_data = [];
+                    yield fetch('https://saisei-server.com/get_nft_data', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        mode: 'cors',
+                        body: JSON.stringify({
+                            mint: address,
+                            type: 'teki',
+                        })
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                        nft_data = data;
+                    })
+                        .catch(error => {
+                        // handle errors
+                    });
+                    const img = document.createElement('img');
+                    const data = document.createElement('div');
+                    const info_container = document.createElement('div');
+                    const placeholder = document.createElement('div');
+                    placeholder.classList.add('loader-vis');
+                    main_box.appendChild(placeholder);
+                    img.src = nft_data[2];
+                    img.onload = () => {
+                        placeholder.style.display = 'none';
+                    };
+                    const rank_data = document.createElement('span');
+                    data.innerHTML = nft_data[0] + "<br/>";
+                    rank_data.innerHTML = nft_data[1];
+                    data.appendChild(rank_data);
+                    img.classList.add("suteki-image");
+                    data.classList.add("info");
+                    info_container.classList.add("info-wrapper");
+                    if (nft_data[1].includes("Henshin")) {
+                        //console.log('hi')
+                        rank_data.style.color = 'red';
+                        const lock = document.createElement('img');
+                        lock.src = './assets/lock-1.png';
+                        lock.classList.add("suteki-image");
+                        lock.classList.add("lock");
+                        info_container.appendChild(lock);
+                        info_container.addEventListener('click', () => __awaiter(this, void 0, void 0, function* () {
+                            showAlert('This NFT is already Henshin rank!', 'red');
+                        }));
+                        info_container.classList.add('invalid');
+                    }
+                    else {
+                        const upgrade_ind = document.createElement('div');
+                        upgrade_ind.innerHTML = 'Upgrade';
+                        upgrade_ind.classList.add('upgrade_ind');
+                        info_container.appendChild(upgrade_ind);
+                        info_container.setAttribute('id', address);
+                        info_container.addEventListener('click', () => __awaiter(this, void 0, void 0, function* () {
+                            choice_modal.style.display = 'flex';
+                            const sol_amount_ind = document.getElementById('Sol-amount');
+                            const sushi_amount_ind = document.getElementById('Sushi-amount');
+                            chosen = info_container;
+                            curr_mint = chosen.getAttribute('id');
+                            curr_rank = (chosen.lastChild.lastChild.textContent);
+                            sol_amount_ind.textContent = sol_dict[curr_rank].toString();
+                            sushi_amount_ind.textContent = sushi_dict[curr_rank].toString();
+                            if (curr_rank === 'Max') {
+                                const weapon_image = document.getElementById('pay-weapon');
+                                weapon_image.style.opacity = '0.3';
+                            }
+                        }));
+                    }
+                    info_container.appendChild(img);
+                    info_container.appendChild(data);
+                    main_box.appendChild(info_container);
+                    setTimeout(() => {
+                        info_container.style.opacity = '100';
+                    }, 10);
+                }
+                else if (set2_data.has(address) && amount === '1') {
+                    wep_count += 1;
+                    var link = '';
+                    yield fetch('https://saisei-server.com/get_nft_data', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        mode: 'cors',
+                        body: JSON.stringify({
+                            mint: address,
+                            type: 'wep',
+                        })
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                        link = data;
+                    })
+                        .catch(error => {
+                        console.log(error);
+                        // handle errors
+                    });
+                    //console.log(link);
+                    const wep_img = document.createElement('img');
+                    wep_img.src = link;
+                    weapon_box.appendChild(wep_img);
+                    wep_img.classList.add("wep-image");
+                    wep_img.setAttribute('id', `${address}`);
+                    wep_img.addEventListener('click', () => __awaiter(this, void 0, void 0, function* () {
+                        selected_weapon = wep_img.getAttribute('id');
+                        weapon_box.style.display = 'none';
+                        yield create_sushi_transaction(curr_mint, owner, curr_rank);
+                    }));
+                }
+            }
+            all_loaded = true;
+            const held_weapons = document.querySelector('.held-weapons');
+            held_weapons.innerHTML = `Held Weapons: ${wep_count}`;
+            if (num === 0) {
+                const no_sutekis = document.createElement('div');
+                no_sutekis.innerHTML = 'No Suteki NFTs<br/>Owned!<br/>Get one <a href="http://magiceden.io/marketplace/suteki?activeTab=items">Here</a>';
+                no_sutekis.classList.add('no-sutekis');
+                const ref = document.createElement('div');
+                main_box.appendChild(no_sutekis);
+            }
+            const size1 = document.createElement('div');
+            size1.setAttribute("id", "sizebox-1");
+            main_box.appendChild(size1);
+            //console.log(Sutekis)
+            //Do something after connection is established
+        }
+        catch (err) {
+            console.log(err);
+            button.style.display = 'flex';
+            loader.style.display = 'none';
+            main_box.style.display = 'none';
+            showAlert(err, 'red');
+        }
+    });
+}
+sol_choice.addEventListener('click', function (e) {
+    return __awaiter(this, void 0, void 0, function* () {
+        if (!all_loaded) {
+            showAlert('Assets are still loading', 'red');
+        }
+        else {
+            yield create_sol_transaction(curr_mint, owner, curr_rank);
+        }
+    });
+});
+sushi_choice.addEventListener('click', function (e) {
+    return __awaiter(this, void 0, void 0, function* () {
+        if (!all_loaded) {
+            showAlert('Assets are still loading', 'red');
+        }
+        else {
+            if (curr_rank != 'Max') {
+                weapon_box.style.display = 'flex';
+            }
+            else {
+                yield create_sushi_transaction(curr_mint, owner, curr_rank);
+            }
+        }
+    });
+});
+wallet_disconnect.addEventListener('click', () => __awaiter(void 0, void 0, void 0, function* () {
+    yield disconnect();
+}));
+button.addEventListener('click', () => __awaiter(void 0, void 0, void 0, function* () {
+    // Hide the button
+    button.style.display = 'none';
+    loader.style.display = 'flex';
+    if (null === button.parentNode) {
+        throw Error('refNode.parentNode is null');
+    }
+    // Add the loading indicator element to the document
+    button.parentNode.insertBefore(loader, button.nextSibling);
+    setTimeout(() => {
+        modal.style.display = 'flex';
+    }, 500);
+    //await wallet.connect();
+}));
+phantom.addEventListener('click', () => __awaiter(void 0, void 0, void 0, function* () {
+    modal.style.display = 'none';
+    wallet_type = 'phantom';
+    setTimeout(function () {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield connect_wallet();
+        });
+    }, 3000);
+}));
+Solflare.addEventListener('click', () => __awaiter(void 0, void 0, void 0, function* () {
+    modal.style.display = 'none';
+    wallet_type = 'solflare';
+    setTimeout(function () {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield connect_wallet();
+        });
+    }, 3000);
+}));
+
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"./544ZHb9RNiZbBdfW8TdYMp7tUAbHESs8LtDNR2SVqrC8_mint_accounts.json":1,"./suteki-mints.json":3,"@solana/web3.js":30,"buffer":61}],3:[function(require,module,exports){
+},{"./544ZHb9RNiZbBdfW8TdYMp7tUAbHESs8LtDNR2SVqrC8_mint_accounts.json":1,"./suteki-mints.json":3,"@solana/web3.js":30,"bn.js":33,"buffer":61}],3:[function(require,module,exports){
 module.exports=[
     "122FgrdhgHyNVdnPBWpC1EU59izZXzeJby9cCxREkFct",
     "12C8zniKNAQ42NMv6fGsxwAXsTkLhA9MF1Xv5xAC5fNZ",
