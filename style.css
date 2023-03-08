@@ -176,7 +176,7 @@ body{
   color: #ffffff;
 }
 
-@keyframes popup {
+@keyframes popup{
   from {
     transform: scale(0);
   }
@@ -454,8 +454,6 @@ body{
     background-color: rgba(2, 3, 8, 1);
     border: 2px solid #dce7ec;
     flex-direction: row;
-    
-
   }
   @media only screen and (max-width: 550px) {
     .info-bar {
